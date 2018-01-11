@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.axxezo.MobileReader">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_axx"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".lastRecordsList"
+            android:label="@string/title_activity_last_records_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Configuration"
+            android:label="@string/title_activity_configuration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".find_people_in_manifest"
+            android:label="@string/title_find"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".manual_registration"
+            android:label="Registro Manual" />
+        <activity android:name=".CloseTrip" />
+        <activity
+            android:name=".Settings"
+            android:parentActivityName="com.axxezo.MobileReader.MainActivity"
+            android:label="@string/title_activity_settings"/>
+    </application>
+
+</manifest>

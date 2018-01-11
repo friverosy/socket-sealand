@@ -1,0 +1,8 @@
+# Autor: Cristtopher Quintana T. <cquintana@axxezo.com>
+image: uber/android-build-environment:latest
+
+pipelines:
+  default:
+    - step:
+        script:
+          - ./gradlew assembleDebug

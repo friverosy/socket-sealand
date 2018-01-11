@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_find_people_in_manifest"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.axxezo.MobileReader.find_people_in_manifest"
+    tools:showIn="@layout/activity_find_people_in_manifest"
+    android:layout_height="465dp">
+
+
+    <TextView
+        android:id="@+id/txtviewFindPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="top|center"
+        android:text="Buscar Persona"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText_find_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtviewFindPeople"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Escanee cédula ó ingrese RUT"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/button_manual_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/editText_find_people"
+        android:text="Busqueda Manual" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/button_manual_search"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView_is_in_manifest"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@color/cardview_light_background"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/textView_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="70dp"
+            android:text="Nombre:" />
+
+        <TextView
+            android:id="@+id/textView_title_DNI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/textView_title_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:text="DNI :"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/textView_title_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/textView_title_name"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textView_title_name"
+            android:layout_marginTop="25dp"
+            android:text="Origen:"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/textView_title_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/textView_title_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="160dp"
+            android:text="Destino:"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/textView_show_DNI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@id/textView_title_DNI" />
+
+        <TextView
+            android:id="@+id/textView_show_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_show_DNI"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textView_title_name" />
+
+        <TextView
+            android:id="@+id/textView_show_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_show_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/textView_title_origin" />
+
+        <TextView
+            android:id="@+id/textView_show_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/textView_title_destination"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/textView_title_name" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

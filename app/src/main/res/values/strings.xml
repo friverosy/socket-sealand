@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Naviera Austral</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Configuración</string>
+    <string name="action_synchronize">Sincronizar</string>
+    <string name="action_lastRecords">Manifiesto</string>
+    <string name="action_export">Exportar</string>
+    <string name="action_mainWindow">Principal</string>
+    <string name="action_exit">Salir</string>
+    <string name="action_aboutUs">Acerca De</string>
+    <string name="action_Records">Manifiesto</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_setting">Configuración</string>
+    <string name="title_activity_last_records_list">Ultimos Registros</string>
+    <string name="title_activity_configuration">Configuración</string>
+    <string name="title_activity_find_people_in_manifest">find_people_in_manifest</string>
+    <string name="action_find">Buscar</string>
+    <string name="title_find">Buscar en Manifiesto</string>
+    <string name="manifiest">Manifiesto</string>
+    <string name="find">Buscar</string>
+    <string name="manual_registration">Venta a Bordo</string>
+    <string-array name="states_array">
+        <item>Sin Registro</item>
+        <item>Embarcado</item>
+        <item>Desembarcado</item>
+    </string-array>
+    <string name="title_activity_settings">Ajustes</string>
+    <string name="adjustment">Ajustes</string>
+</resources>
